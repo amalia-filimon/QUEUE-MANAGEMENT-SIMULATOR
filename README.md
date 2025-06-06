@@ -75,3 +75,28 @@ Queue 2:
 ```
 ---
 
+## 🧪 Test Case Example
+
+This test showcases the simulator running with 4 clients and 2 queues over a 60-second interval.  
+Input parameters were provided through the graphical interface, as shown below:
+
+![Queue Management Application UI](./test1-screenshot.png)
+
+
+
+
+### ✅ Input Parameters:
+
+- **Number of clients:** 4  
+- **Number of queues:** 2  
+- **Simulation time:** 60 seconds  
+- **Arrival time range:** 2 – 30 seconds  
+- **Service time range:** 2 – 4 seconds
+
+### 📝 Simulation Behavior (from `Test1.txt`):
+
+- Clients are generated with randomized arrival times and fixed service durations.
+- At time `2`, client `(2, 2, 2)` enters **Queue 2**.
+- At time `5`, client `(3, 5, 3)` is added to **Queue 2** after the previous client finishes.
+- Clients `(1, 29, 3)` and `(4, 30, 3)` wait until the end of the interval before entering queues.
+- The simulation logs all events, queue statuses, and remaining wait times every second.
